@@ -10,6 +10,7 @@ attr_reader :date, :patient, :doctor
     @doctor = doctor
     @@all << self
     doctor.all << self
+    patient.all << self
   end
 
 
