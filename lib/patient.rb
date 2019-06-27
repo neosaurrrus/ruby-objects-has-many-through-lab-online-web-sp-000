@@ -23,9 +23,9 @@ class Patient
     @all << new_Appointment
   end
 
-  # def appointments
-  #   @all
-  # end
+  def appointments
+    @all
+  end
 
   def doctors
     patient_appointments = appointments.select { |appointment| appointment.patient == self}
